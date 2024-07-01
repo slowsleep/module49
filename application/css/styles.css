@@ -9,23 +9,24 @@ header {
     padding: 0.5em 1em;
 }
 
-header > div > ul {
+header>div>ul {
     display: flex;
 }
-header > div > ul > li {
+
+header>div>ul>li {
     list-style-type: none;
 }
 
-header > div > ul > li:nth-child(n+1) {
+header>div>ul>li:nth-child(n+1) {
     margin-right: 1em;
 }
 
-header > div > ul > li > a {
+header>div>ul>li>a {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-header > div > ul > li > a:hover {
+header>div>ul>li>a:hover {
     color: #7b777b;
     text-decoration: dotted;
 }
@@ -36,7 +37,7 @@ main {
     max-width: 900px;
 }
 
-main > img {
+main>img {
     width: 100%;
 }
 
@@ -50,7 +51,6 @@ table {
     padding: 1em;
 }
 
-.page-not-found > p {
+.page-not-found>p {
     font-family: 'courier new';
 }
-

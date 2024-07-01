@@ -8,8 +8,8 @@ class View
      * @param string $title заголовок страницы
      * @param array $data данные
      */
-	public function generate($content_view, $layout_view, $title = 'MVC-фреймворк', $data = null)
-	{
-		include 'application/views/'.$layout_view;
-	}
+    public function generate($content_view, $layout_view, $title = 'MVC-фреймворк', $data = null)
+    {
+        include 'application/views/' . $layout_view;
+    }
 }
