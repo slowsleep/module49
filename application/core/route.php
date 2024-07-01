@@ -72,8 +72,10 @@ class Route
 	{
         header('HTTP/1.1 404 Not Found');
         header('Status: 404 Not Found');
-        $errorPage = 'application/views/404.php';
-        include $errorPage;
+
+        $view = new View();
+        $view->generate('404_view.php', 'layout/layout_view.php', 'Страница не найдена');
+
         exit();
     }
 }
