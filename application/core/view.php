@@ -1,8 +1,15 @@
 <?php
 class View
 {
-	public function generate($content_view, $template_view, $data = null)
+    /**
+     * Генерация представления
+     * @param string $content_view имя файла с контентом представления относительно папки /application/views
+     * @param string $layout_view имя файла шаблона представления (в который будет вставлен контент) относительно папки /application/views
+     * @param string $title заголовок страницы
+     * @param array $data данные
+     */
+	public function generate($content_view, $layout_view, $title = 'MVC-фреймворк', $data = null)
 	{
-		include 'application/views/'.$template_view;
+		include 'application/views/'.$layout_view;
 	}
 }
