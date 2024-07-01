@@ -1,0 +1,56 @@
+body {
+    background-color: #201e21;
+    margin: 0;
+    color: white;
+}
+
+header {
+    background-color: #1d1a1f;
+    padding: 0.5em 1em;
+}
+
+header > div > ul {
+    display: flex;
+}
+header > div > ul > li {
+    list-style-type: none;
+}
+
+header > div > ul > li:nth-child(n+1) {
+    margin-right: 1em;
+}
+
+header > div > ul > li > a {
+    color: white;
+    text-decoration:none;
+}
+
+header > div > ul > li > a:hover {
+    color: #7b777b;
+    text-decoration: dotted;
+}
+
+main {
+    padding: 0.5em;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+main > img {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.page-not-found {
+    text-align: center;
+    padding: 1em;
+}
+
+.page-not-found > p {
+    font-family: 'courier new';
+}
+
